@@ -1,0 +1,10 @@
+name: Manual Trigger for Staging Build
+on:
+  workflow_dispatch:
+    inputs:
+      branchName:
+        description: 'Branch to build'
+        required: true
+      prNumber:
+        description: 'PR number (optional)'
+        required: false
